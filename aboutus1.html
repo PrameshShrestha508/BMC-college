@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .navbar{
+            background-color: grey;
+            /* border-radius: 30px; */
+            width: 900px;
+            float: right;
+            margin-top: 40px;
+            margin-right: 15px;
+            
+        }
+        .navbar ul{
+           overflow: auto;
+           padding-inline-start: 10px;
+           margin: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 18px;
+
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: whitesmoke;
+            /* font-size: 1em; */
+        }
+        .navbar li a:hover{
+            color:black;
+        }
+        .search{
+            color: white;
+            float: right;
+            padding-top: 10px; 
+             padding-right: 40px;   
+        }
+        .navbar input{
+            border: 1px solid black;
+            border-radius: 14px;
+            padding: 2px 20px;
+            width: 150px;
+        }
+        .container{
+            background-color: lightgrey;
+            overflow: auto;
+            height: 100px;
+            position: sticky;
+
+        }
+        img{
+            overflow:auto;
+            float: left;
+            margin-left: 5px;
+        }
+        .name{
+           /* overflow: auto; */
+          
+           float: left;
+           margin-left: 15px;
+           text-align: center;
+        }
+        h2{
+            margin-top: 40px;
+            margin-bottom: 0px;
+        }
+       p{
+           margin: 0px;
+       }
+       #heading{
+           text-align: center;
+           /* margin-top: 10px; */
+           font-family: 'Times New Roman', Times, serif;
+           margin-bottom: 0px;
+       }
+       #title{
+           text-align: center;
+       }
+       hr{
+           width: 1200px;
+       }
+       .topic{
+           width:1300px;
+           border: 1px solid grey;
+           margin: 33px auto;
+           background-color: lightgrey;
+           height: 468px;
+           box-sizing: border-box;
+           
+       }
+       .box{
+        border: 1px solid grey;
+        margin: 12px 3px;
+        padding: 12px 3px;
+        background: rgb(242, 237, 237);
+
+       }
+       #office{
+        float: left;
+        width: 60%;
+
+       }
+       h3{
+           text-align: center;
+       }
+       #notice{
+           float: right;
+           width: 36%;
+           
+           height: 446px;
+           
+       }
+      #officeimage{
+          width: 758px;
+          float: left;
+          height: 271px;
+          margin-top: -4px;
+          margin-bottom: 6px;
+      }
+      .btn{
+       text-decoration: none;
+       color: black;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       background-color:lightskyblue;
+       border: none;
+       cursor: pointer;
+       font-size: 10px;
+   }
+ .btn:hover{
+       color:powderblue;
+       background-color: rosybrown;
+   }
+   /*a:visited{
+       background-color: royalblue;
+   }*/
+    .btn:active{
+       background-color: sandybrown; 
+   }
+   h4{
+       font-size: 50px;
+       text-align: center;
+       margin: 0px;
+       padding: 0px;
+   }
+     #headline{
+         margin-top: 0px;
+     }
+     .messages{
+           width: 1298px;
+           border: 1px solid grey;
+           margin: 33px auto;
+          
+           height: 385px;
+           box-sizing: border-box;
+     }
+     .message{
+        border: 1px solid grey;
+        margin: 12px 8px;
+        padding: 12px 3px;
+        background-color: rgb(214, 230, 240);
+        float: left;
+        width: 416px;
+        height: 360px;
+     }
+     .butwal{
+         width: 150px;
+         height: 150px;
+         margin-left: 134px;
+     }
+     h5{
+         text-align: center;
+         margin: 4px 0px;
+         font-size: 16px;
+         margin-top: 168px;
+     }
+     .lower{
+         height: 240px;
+         background-color:yellow;
+     }
+     .footerimg{
+         height: 51px;
+         width: 45px;
+         margin-top: 9px;
+         
+         padding: -1px;
+     }
+     h6{
+         font-size: 20px;
+         margin-top: 20px;
+         margin-bottom: 10px;
+         color: rgb(199, 110, 75);
+        margin-left: 5px;
+     }
+     .share{
+         height: 150px;
+          /* /* background-color: magenta;   */
+         margin: 10px 10px;
+         width: 317px;
+         float: left;
+     }
+     #list ul{
+         margin: 5px -31px;
+
+     }
+     #list ul li{
+         padding: 5px 0px;
+         color: rgb(199, 110, 75);
+     }
+     #list2 ul{
+         margin: 5px -31px;
+     }
+     #list2 ul li{
+        padding: 5px 0px;
+         color: rgb(199, 110, 75);
+     }
+     #copy{
+         background-color: grey;
+         height:45px;
+         width: 1331px;
+         margin-top: 2px;
+     }
+     #copy{
+         text-align: center;
+         padding-top: 15px;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <img src="logo.png" alt="Logo">
+            <div class="name">
+                <h2>Butwal Multiple Campus</h2>
+                <p >Affiliated to Tribhuvan University</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="navbar.html" target="_blank">Home</a></li>
+                    <li><a href="aboutus1.html">AboutUS</a></li>
+                    <li><a href="#" target="_blank">Courses</a></li>
+                    <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="Search this website">
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        </div>
+        <h1 id="heading">About Us</h1>
+        <p id="title">about BMC</p>
+        <hr>
+        <div class="topic">
+            <div class="box" id="office">
+                <img src="office.jpg" alt="Office" id="officeimage">
+                <h3>About Butwal Multiple Campus</h3>
+                <p>Butwal Multiple Campus is the only one College dedicated for quality education in the region managed by experts and Professionals. Butwal Multiple Campus and its management team have specific vision to set an example in the field of teaching learning. We are so very much dedicated to nurture the students with the world class environment so our graduates will be highly sellable in the competitive labor market and even further mold them to IT entrepreneurs. We seek best wishes, hope, help, trust and support from society for realization of vision to establish BMC, as a valued educational institute.</p>
+            </div>
+            <div class="box" id="notice">
+                
+                <h3>Notice</h3>
+                <ol type="1">
+                    <li>It is inform that to all the students of bsc.csit 3rd sem students must have their admission till the date poush 19,2075.Otherwise..... </li>
+                    <a href="https://www.google.com" target="_blank" class="btn">Read more</a>
+               
+                    <li>Bsc/Bsc.csit Admission 2075,waiting list Admission notice....</li>
+                    <a href="https://www.google.com"  target="_blank" class="btn">Read more</a>
+                    <li>The entrance exam for scholarship in Bsc has been conducted in....</li>
+                    <a href="https://www.google.com" target="_blank" class="btn">Read more</a>
+                    <li>The notice for fooball tournament between BMC's teacher and bsc.csit students... </li>
+                    <a href="https://www.google.com" target="_blank" class="btn">Read more</a>
+                    <li>Bsc/Bsc.csit Admission 2075,waiting list Admission notice.... </li>
+                    
+                </ol>
+            </div>
+        </div>
+        <h4>Messages</h4>
+        <hr id="headline">
+        <div class=messages>
+            <div class=message id="chief">
+               <img src="chief.jpg" alt="photo" class="butwal">
+               <h5>Message from Chief</h5>
+               <P>I would like to heartily welcome all of you students for choosing Butwal Multiple Campus(BMC) as the destination of your academic carrer. Butwal Multiple Campus(BMC) is all yours and your participation and cooperation will help realize the goals of human resource development to meet the challenges of today and tomorrow. Let us join hands in shaping your wards.Thank you.</P>
+            </div>
+            <div class=message id="sunil">
+                <img src="sunil2.jpg" alt="Photo" class="butwal">
+                <h5>Message from Co-Ordinator</h5>
+                <p>Dear Prospects, We want to convey message to student that Rupandehi is in no any sense less than Capital or Aboard for Education, and we can build this place even better and independent to any other city within and outside country for Academic Purpose. So we welcome you to join BMC for the most attractive program on earth that is different courses and enrich your career.</p>
+            </div>
+            <div class=message id="ananta">
+                <img src="ananta2.jpg" alt="photo" class="butwal">
+                <h5>Message from Lecturer</h5>
+                <p>BMC creates possibilities that you have never imagined. Legendary approach adopted by college has already sent students in different companies even before graduation.Our abundant number of exemplary lectures has been motivating students on the right path tosuccess. Our trainings and extra curriculum activities adds the beauty in the courses and our students get recruited with overwhelming performance.</p>
+            </div>
+        </div><br>
+        <br>
+        
+        
+        
+
+     <div class="lower">
+         <div class="share">
+             <h6>Sharing is caring!</h6>
+             <img src="instalogo.png" alt="instagram" class="footerimg">
+             <img src="googlelogo.png" alt="Google" class="footerimg">
+             <img src="facebooklogo.png" alt="facebook" class="footerimg">   
+         </div>
+         <div class="share" id="list">
+             <h6>Important links</h6>
+             <ul type="none">
+                 <li>Home</li>
+                 <li>Courses</li>
+                 <li>Gallery</li>
+             </ul>
+        </div>
+        <div class="share" id="list2">
+            <h6>Contact Information</h6> 
+            <ul type="none">
+                <li>Siddhartha Rajmarg, Butwal 32907</li>
+                <li>071-542834, 540134</li>
+                <li>http://butwalmultiplecampus.edu.np/</li>
+            </ul>
+        </div>
+        
+            <div class="share">
+                <h6>Follow Us</h6>
+                <img src="instalogo.png" alt="instagram" class="footerimg">
+                <img src="googlelogo.png" alt="Google" class="footerimg">
+                <img src="facebooklogo.png" alt="facebook" class="footerimg">   
+            </div>
+        <div class="share" id="copy">
+             <p id="right">copyright@ManishaThapaMagar </p>
+        </div>
+     </div>
+</body>
+</html>

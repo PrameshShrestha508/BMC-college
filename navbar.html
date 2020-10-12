@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            background: url('bmc.jpg');
+            background-repeat: no-repeat;
+        }
+        
+        .navbar{
+              background-color: grey;  
+            /* border-radius: 30px; */
+            width: 900px;
+            float: right;
+            margin-top: 40px;
+            margin-right: 15px;
+            
+        }
+        .navbar ul{
+           overflow: auto;
+           padding-inline-start: 10px;
+           margin: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 18px;
+
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: whitesmoke;
+            /* font-size: 1em; */
+        }
+        .navbar li a:hover{
+            color:black;
+        }
+        .search{
+            color: white;
+            float: right;
+            padding-top: 10px; 
+             padding-right: 40px;   
+        }
+        .navbar input{
+            border: 1px solid black;
+            border-radius: 14px;
+            padding: 2px 20px;
+            width: 150px;
+        }
+        .container{
+            /* background-color: lightgrey; */
+            overflow: auto;
+            height: 100px;
+            position: sticky;
+
+        }
+        img{
+            overflow:auto;
+            float: left;
+            margin-left: 5px;
+        }
+        .name{
+           /* overflow: auto; */
+          
+           float: left;
+           margin-left: 15px;
+           text-align: center;
+        }
+        h2{
+            margin-top: 40px;
+            margin-bottom: 0px;
+            color: rgb(190, 220, 230);
+        }
+       p{
+           margin: 0px;
+           color: rgb(190, 220, 230);
+       }
+       .first{
+           
+           margin-top: 238px;
+           margin-bottom: 20px;
+       }
+      h1{
+          text-align: center;
+          color: lightyellow;
+          font-size: 40px;
+      }
+     #para{
+         color: lightyellow;
+         text-align: center;
+         font-size: 28px;
+     }
+     .lower{
+         height: 240px;
+         background-color:yellow;
+     }
+     .footerimg{
+         height: 51px;
+         width: 45px;
+         margin-top: 9px;
+         
+         padding: -1px;
+     }
+     h6{
+         font-size: 20px;
+         margin-top: 20px;
+         margin-bottom: 10px;
+         color: rgb(199, 110, 75);
+        margin-left: 5px;
+     }
+     .share{
+         height: 150px;
+          /* /* background-color: magenta;   */
+         margin: 10px 10px;
+         width: 317px;
+         float: left;
+     }
+     #list ul{
+         margin: 5px -31px;
+
+     }
+     #list ul li{
+         padding: 5px 0px;
+         color: rgb(199, 110, 75);
+     }
+     #list2 ul{
+         margin: 5px -31px;
+     }
+     #list2 ul li{
+        padding: 5px 0px;
+         color: rgb(199, 110, 75);
+     }
+     #copy{
+         background-color: grey;
+         height:45px;
+         width: 1331px;
+         margin-top: 2px;
+     }
+     #copy{
+         text-align: center;
+         padding-top: 15px;
+     }
+     .btn{
+       text-decoration: none;
+       color: black;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       background-color:rgb(207, 215, 220);
+       border: none;
+       cursor: pointer;
+       font-size: 21px;
+       margin-left: 650px;
+       padding: 2px;
+      
+   }
+ .btn:hover{
+       color:powderblue;
+       background-color: rosybrown;
+   }
+   /*a:visited{
+       background-color: royalblue;
+   }*/
+    .btn:active{
+       background-color: sandybrown; 
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        
+    <header>
+        <img src="logo.png" alt="Logo">
+        <div class="name">
+            <h2>Butwal Multiple Campus</h2>
+            <p >Affiliated to Tribhuvan University</p>
+        </div>
+        <
+        <nav class="navbar">
+            <ul>
+                <li><a href="navbar.html">Home</a></li>
+                <li><a href="aboutus1.html" target="_blank">AboutUS</a></li>
+                <li><a href="#" target="_blank">Courses</a></li>
+                <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website"
+                </div>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <div class="first">
+     <h1>Welcome to Butwal Multiple Campus</h1>
+     <p id="para">Any prominient career starts with good education. Together with us, you will have an oppurtunity of getting better and deeper knowledge of the subjects that can build your future.</p>
+     
+</div>
+<a href="aboutus1.html"  target="_blank" class="btn">Learn more</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="lower">
+    <div class="share">
+        <h6>Sharing is caring!</h6>
+        <img src="instalogo.png" alt="instagram" class="footerimg">
+        <img src="googlelogo.png" alt="Google" class="footerimg">
+        <img src="facebooklogo.png" alt="facebook" class="footerimg">   
+    </div>
+    <div class="share" id="list">
+        <h6>Important links</h6>
+        <ul type="none">
+            <li>Home</li>
+            <li>Courses</li>
+            <li>Gallery</li>
+        </ul>
+   </div>
+   <div class="share" id="list2">
+       <h6>Contact Information</h6> 
+       <ul type="none">
+           <li>Siddhartha Rajmarg, Butwal 32907</li>
+           <li>071-542834, 540134</li>
+           <li>http://butwalmultiplecampus.edu.np/</li>
+       </ul>
+   </div>
+   
+       <div class="share">
+           <h6>Follow Us</h6>
+           <img src="instalogo.png" alt="instagram" class="footerimg">
+           <img src="googlelogo.png" alt="Google" class="footerimg">
+           <img src="facebooklogo.png" alt="facebook" class="footerimg">   
+       </div>
+   <div class="share" id="copy">
+        <p id="right">copyright@ManishaThapaMagar </p>
+   </div>
+</div>
+</body>
+</html>

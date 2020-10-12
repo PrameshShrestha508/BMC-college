@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        
+        .navbar{
+            background-color: grey;
+            /* border-radius: 30px; */
+            width: 900px;
+            float: right;
+            margin-top: 40px;
+            margin-right: 15px;
+           
+            
+        }
+        .navbar ul{
+           overflow: auto;
+           padding-inline-start: 10px;
+           margin: auto;
+           
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 18px;
+           
+
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: whitesmoke;
+            /* font-size: 1em; */
+            
+        }
+        .navbar li a:hover{
+            color:black;
+        }
+        .search{
+            color: white;
+            float: right;
+            padding-top: 10px; 
+             padding-right: 40px;
+               
+        }
+        .navbar input{
+            border: 1px solid black;
+            border-radius: 14px;
+            padding: 2px 20px;
+            width: 150px;
+        }
+        .container{
+            background-color: lightgrey;
+            overflow: auto;
+            height: 100px;
+            
+
+        }
+        img{
+            overflow:auto;
+            float: left;
+            margin-left: 5px;
+           
+        }
+        .name{
+           /* overflow: auto; */
+          
+           float: left;
+           margin-left: 15px;
+           text-align: center;
+          
+        }
+        h2{
+            margin-top: 40px;
+            margin-bottom: 0px;
+        }
+       p{
+           margin: 0px;
+       }
+       .third{
+           width: 100%;
+           margin-left: 0%;
+           
+       }
+       .imgcontainer{
+           float: left;
+           width: 337px;
+           padding: 4px;
+           box-sizing: border-box;
+           margin-left: 0%; 
+       }
+       
+     
+       </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <img src="logo.png" alt="Logo">
+            <div class="name">
+                <h2>Butwal Multiple Campus</h2>
+                <p >Affiliated to Tribhuvan University</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="navbar.html" target="_blank">Home</a></li>
+                    <li><a href="aboutus1.html" target="_blank">AboutUS</a></li>
+                    <li><a href="#" target="_blank">Courses</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="Search this website">
+                    </div>
+                </ul>
+               
+            </nav>
+    
+        </header>
+       
+        </div>
+        <div class="images">
+        <div class="imgcontainer">
+            <img src="chief.jpg" alt="first pic" class="third">
+        </div>
+        <div class="imgcontainer" id="third1" >
+            <img src="dance.jpg" alt="first pic" class="third">
+        </div>
+        <div class="imgcontainer">
+            <img src="clouds.jpg" alt="first pic" class="third">
+        </div>
+        <div class="imgcontainer">
+            <img src="senior.jpg" alt="first pic" class="third">
+        </div>
+    </div>
+</body>
+</html>
